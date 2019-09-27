@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Transit Layer</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 40.7831, lng: -73.9712},
+          disableDefaultUI: true
+        });
+
+        var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
+
+        // new google.maps.Marker({ position: {lng: -73.94549500011411, lat: 40.807753999182815}, map: map, title: "    125th St  "});
+        // new google.maps.Marker({ position: {lng: -74.00020100063497, lat: 40.737825999728116}, map: map, title: "    14th St "});
+        // new google.maps.Marker({ position: {lng: -73.98995099881881, lat: 40.734673000996125}, map: map, title: "    Union Sq - 14th St  "});
+        // new google.maps.Marker({ position: {lng: -73.9879368338264, lat: 40.74964456009442}, map: map, title: "    Herald Sq - 34th St "});
+        // new google.maps.Marker({ position: {lng: -73.99105699913983, lat: 40.75037300003949}, map: map, title: "     34th St - Penn Station  "});
+        // new google.maps.Marker({ position: {lng: -73.98459099904711, lat: 40.754184001312545}, map: map, title: "    42nd St - Bryant Pk "});
+        // new google.maps.Marker({ position: {lng: -73.98973500085859, lat: 40.757307998551504}, map: map, title: "    42nd St - Port Authority Bus Term "});
+        // new google.maps.Marker({ position: {lng: -73.98133100227702, lat: 40.75864100159815}, map: map, title: "     47th-50th Sts - Rockefeller Ctr "});
+        // new google.maps.Marker({ position: {lng: -73.9752485052734, lat: 40.76008683231326}, map: map, title: "    5th Ave - 53rd St "});
+        // new google.maps.Marker({ position: {lng: -73.9801, lat:  40.7655}, map: map, title: "   57 ST-7 AV  "});
+        // new google.maps.Marker({ position: {lng: -73.98192900232715, lat: 40.76824700063689}, map: map, title: "     59th St - Columbus Circle "});
+        // // new google.maps.Marker({ position: {lng: -73.9820, lat:  40.7790}, map: map, title: "   72nd St "});
+        // // new google.maps.Marker({ position: {lng: -73.9500, lat:  40.7660}, map: map, title: "   72 ST-2 AVE "});
+        // // new google.maps.Marker({ position: {lng: -73.97621799859327, lat: 40.78864400073892}, map: map, title: "     86th St "});
+        // // new google.maps.Marker({ position: {lng: -73.97754993539385, lat: 40.68442016526762}, map: map, title: "     Atlantic Av - Barclay's Center  "});
+        // // new google.maps.Marker({ position: {lng: -73.99015100090539, lat: 40.692403999991036}, map: map, title: "    Borough Hall  "});
+        // new google.maps.Marker({ position: {lng: -74.00858473570133, lat: 40.714111000774025}, map: map, title: "    Chambers St "});
+        // new google.maps.Marker({ position: {lng: -73.83003000262508, lat: 40.75959999915012}, map: map, title: "     Flushing - Main St  "});
+        // new google.maps.Marker({ position: {lng: -74.007744444445 , lat: 40.7102055556    }, map: map, title: "     Fulton St "});
+
+
+
+
+
+
+
+        // new google.maps.Marker({ position: {lng: -73.9767132992584, lat: 40.75180742981634}, map: map, title: "    Grand Central - 42nd St "});
+        // new google.maps.Marker({ position: {lng: -73.80109632298924, lat: 40.70206737621188}, map: map, title: "     Jamaica Ctr - Parsons / Archer  "});
+        // // new google.maps.Marker({ position: {lng: -73.98721815267317, lat: 40.692470636847084}, map: map, title: "    Jay St - MetroTech  "});
+        // // new google.maps.Marker({ position: {lng: -73.89129866519697, lat: 40.74653969115889}, map: map, title: "     Jackson Hts - Roosevelt Av  "});
+        // new google.maps.Marker({ position: {lng: -74.0114, lat:  40.7115}, map: map, title: "   PATH NEW WTC  "});
+        // new google.maps.Marker({ position: {lng: -73.98676800153976, lat: 40.75461199851542}, map: map, title: "     Times Sq - 42nd St  "});
+        // new google.maps.Marker({ position: {lng: -74.00030814755975, lat: 40.732254493367876}, map: map, title: "    W 4th St - Washington Sq (Lower)  "});
+
+
+
+
+      new google.maps.Marker({ map: map, title: "14 ST", position: {lng: -74.00020100063497, lat: 40.737825999728116 }});
+      new google.maps.Marker({ map: map, title: "14 ST-UNION SQ ", position: {lng: -73.98995099881881, lat: 40.734673000996125 }});
+      new google.maps.Marker({ map: map, title: "23 ST", position: {lng: -73.992877 , lat: 40.742933}});
+      new google.maps.Marker({ map: map, title: "34 ST-HERALD SQ", position: {lng: -73.99105699913983, lat: 40.75037300003949  }});
+      new google.maps.Marker({ map: map, title: "34 ST-HUDSON YD", position: {lng: -74.00219709442206, lat: 40.75544635961596  }});
+      new google.maps.Marker({ map: map, title: "34 ST-PENN STA ", position: {lng: -73.99105699913983, lat: 40.75037300003949  }});
+      new google.maps.Marker({ map: map, title: "42 ST-BRYANT PK", position: {lng: -73.98459099904711, lat: 40.754184001312545 }});
+      new google.maps.Marker({ map: map, title: "42 ST-PORT AUTH", position: {lng: -73.98973500085859, lat: 40.757307998551504 }});
+      new google.maps.Marker({ map: map, title: "47-50 STS ROCK ", position: {lng: -73.98133100227702, lat: 40.75864100159815  }});
+      new google.maps.Marker({ map: map, title: "49 ST", position: {lng: -73.98420956591096, lat: 40.759801973870694 }});
+      new google.maps.Marker({ map: map, title: "5 AV/53 ST ", position: {lng: -73.9752485052734, lat: 40.76008683231326 }});
+      new google.maps.Marker({ map: map, title: "51 ST", position: {lng: -73.97192000069982, lat: 40.75710699989316  }});
+      new google.maps.Marker({ map: map, title: "57 ST-7 AV ", position: {lng: -73.980088 , lat: 40.765461}});
+      // new google.maps.Marker({ map: map, title: "59 ST", position: {lng: -74.01788099953987, lat: 40.6413616662838 }});
+      new google.maps.Marker({ map: map, title: "59 ST COLUMBUS ", position: {lng: -73.98192900232715, lat: 40.76824700063689  }});
+      new google.maps.Marker({ map: map, title: "B'WAY-LAFAYETTE", position: {lng: -73.99620399876055, lat: 40.725296998738045 }});
+      new google.maps.Marker({ map: map, title: "BOWLING GREEN", position: {lng: -74.01400799803432, lat: 40.70491399928076  }});
+      new google.maps.Marker({ map: map, title: "CHAMBERS ST", position: {lng: -74.00858473570133, lat: 40.714111000774025 }});
+      new google.maps.Marker({ map: map, title: "FLUSHING-MAIN", position: {lng: -73.83003000262508, lat: 40.75959999915012  }});
+      new google.maps.Marker({ position: {lng: -74.007744444445 , lat: 40.7102055556    }, map: map, title: "     Fulton St "});
+      new google.maps.Marker({ map: map, title: "GRD CNTRL-42 ST", position: {lng: -73.9767132992584, lat: 40.75180742981634 }});
+      new google.maps.Marker({ map: map, title: "LEXINGTON AV/53", position: {lng: -73.96907237490204, lat: 40.75746830782865  }});
+      new google.maps.Marker({ map: map, title: "PATH NEW WTC ", position: {lng: -74.0114 , lat: 40.7115}});
+      new google.maps.Marker({ map: map, title: "THIRTY THIRD ST", position: {lng: -73.98207600148947, lat: 40.74608099909145  }});
+      new google.maps.Marker({ map: map, title: "TIMES SQ-42 ST ", position: {lng: -73.98676800153976, lat: 40.75461199851542  }});
+      new google.maps.Marker({ map: map, title: "W 4 ST-WASH SQ ", position: {lng: -74.00030814755975, lat: 40.732254493367876 }});
+      new google.maps.Marker({ map: map, title: "WALL ST", position: {lng: -74.01186199860112, lat: 40.70755700086603  }});
+
+
+
+
+        marker = new google.maps.Marker({ position: {lng: -73.997447, lat: 40.724462}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988607, lat: 40.73747}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.986995, lat: 40.747714}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.994637, lat: 40.7416}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993993, lat: 40.748915}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.984766, lat: 40.743095}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.990817, lat: 40.741827}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989487, lat: 40.740884}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.959961, lat: 40.73269}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.004647, lat: 40.741837}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.009399, lat: 40.713956}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.982062, lat: 40.746152}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992637, lat: 40.745064}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.99292, lat: 40.720201}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991203, lat: 40.727096}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.98468, lat: 40.709792}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.97923, lat: 40.752838}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.987427, lat: 40.745176}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.985968, lat: 40.759383}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.987738, lat: 40.747029}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.990023, lat: 40.739836}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.007489, lat: 40.727235}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.985839, lat: 40.739833}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989933, lat: 40.744734}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993308, lat: 40.740734}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.008584, lat: 40.731373}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.990753, lat: 40.741266}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.005893, lat: 40.726958}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.984106, lat: 40.742974}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.99134, lat: 40.742264}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989272, lat: 40.737535}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.978816, lat: 40.756279}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.983429, lat: 40.744319}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.978338, lat: 40.750814}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991796, lat: 40.742473}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.978865, lat: 40.750638}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.012146, lat: 40.711874}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.007428, lat: 40.727705}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991536, lat: 40.742461}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.999529, lat: 40.741079}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.983038, lat: 40.742437}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.99439, lat: 40.748464}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991289, lat: 40.745713}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.998413, lat: 40.726446}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992367, lat: 40.741315}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992649, lat: 40.740458}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993274, lat: 40.755328}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.985945, lat: 40.756474}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989484, lat: 40.745042}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988972, lat: 40.747159}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.984986, lat: 40.750861}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993157, lat: 40.740503}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.984387, lat: 40.748403}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.981934, lat: 40.772222}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.990198, lat: 40.739064}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.00631, lat: 40.742282}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993521, lat: 40.74316}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.007339, lat: 40.712525}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.98445, lat: 40.742426}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989679, lat: 40.749783}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.990828, lat: 40.702846}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.977771, lat: 40.746932}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992966, lat: 40.740451}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989775, lat: 40.739187}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989352, lat: 40.73755}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992098, lat: 40.739301}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.99134, lat: 40.742264}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.983564, lat: 40.766729}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.983516, lat: 40.743649}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.005392, lat: 40.727695}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991593, lat: 40.753902}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.017811, lat: 40.714997}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991013, lat: 40.744066}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989428, lat: 40.745823}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988843, lat: 40.743899}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.981014, lat: 40.758883}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988566, lat: 40.739455}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.987461, lat: 40.740528}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.982242, lat: 40.74565}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992405, lat: 40.728657}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.986268, lat: 40.754635}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.996868, lat: 40.724624}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.984544, lat: 40.75027}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.961475, lat: 40.76799}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992894, lat: 40.752631}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.99168, lat: 40.745468}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.990983, lat: 40.739864}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989836, lat: 40.745657}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.935721, lat: 40.749318}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.008584, lat: 40.731373}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989742, lat: 40.739056}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992231, lat: 40.740238}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.983269, lat: 40.761795}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.996385, lat: 40.725665}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.99148, lat: 40.7474}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.978324, lat: 40.754094}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988434, lat: 40.746783}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.985066, lat: 40.753564}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.000876, lat: 40.720836}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991966, lat: 40.740696}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.990485, lat: 40.702869}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.97631, lat: 40.744745}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.980724, lat: 40.753136}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993051, lat: 40.740449}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992637, lat: 40.745064}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992326, lat: 40.740075}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.000321, lat: 40.722829}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.994017, lat: 40.73891}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989179, lat: 40.742747}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.004093, lat: 40.719607}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.974118, lat: 40.750329}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992813, lat: 40.736948}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989179, lat: 40.742747}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989179, lat: 40.742747}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.998123, lat: 40.720427}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992122, lat: 40.733615}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.005966, lat: 40.72582}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.997458, lat: 40.724364}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.986697, lat: 40.703952}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.013951, lat: 40.702832}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.008008, lat: 40.723411}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.012837, lat: 40.705431}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.990485, lat: 40.702869}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.989476, lat: 40.702928}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988473, lat: 40.735318}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.001203, lat: 40.72047}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.009637, lat: 40.72102}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.952971, lat: 40.723137}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992399, lat: 40.730579}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.993055, lat: 40.723521}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.991372, lat: 40.728145}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989453, lat: 40.742389}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.998005, lat: 40.720884}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.992435, lat: 40.733064}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.005046, lat: 40.717486}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.994931, lat: 40.727399}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.9942, lat: 40.736146}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.988239, lat: 40.737297}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        // marker = new google.maps.Marker({ position: {lng: -73.973348, lat: 40.697903}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.004093, lat: 40.719607}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.995452, lat: 40.724706}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -74.009052, lat: 40.705532}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.998005, lat: 40.720884}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.995546, lat: 40.736833}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.998653, lat: 40.720245}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.989361, lat: 40.737719}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+        marker = new google.maps.Marker({ position: {lng: -73.999887, lat: 40.723664}, map: map, title: "", icon: "http://maps.google.com/mapfiles/kml/pal3/icon57.png"}); marker.setOpacity(0.3);
+
+
+
+
+
+
+
+
+
+
+
+        var marker = new google.maps.Marker({
+            position: {lat: 37.8199,lng: -122.4783},
+            map: map,
+            title: 'Golden Gate Bridge'
+            });
+
+        var mapOptions = {
+          styles: [
+            {
+              featureType: "transit.station.bus",
+              stylers: [
+                { visibility: "off" }
+              ]
+            }
+        ]};
+        map.setOptions(mapOptions);
+
+        var styles = [
+           {
+             featureType: "poi",
+             stylers: [
+              { visibility: "off" }
+             ]
+            }
+        ];
+
+        map.setOptions({styles: styles});
+
+
+      }
+    </script>
+
+    <style>
+      img[src='http://maps.google.com/mapfiles/kml/pal3/icon57.png'] {
+        width: 14px !important;
+        height: 14px !important;
+        opacity: 0.8 !important;
+      }
+    </style>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR8H32g_VhI6inHswabgSFSC32-E3bP0Y&callback=initMap">
+    </script>
+  </body>
+</html>
