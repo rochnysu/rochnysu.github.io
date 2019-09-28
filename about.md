@@ -7,7 +7,7 @@ title: About
 :paw_prints: Crafting the Future
 
 
-  ######Past PCB Enginner.     
+  ###### Past PCB Enginner.     
   **Current Data Scientis Student**.   
   Future unKnown   
 
