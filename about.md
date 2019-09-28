@@ -7,9 +7,9 @@ title: About
 :paw_prints: Crafting the Future
 
 
-  ######Past PCB Enginner. 
-  **Current Data Scientis Student**. 
-  Future unKnown. 
+  ######Past PCB Enginner.     
+  **Current Data Scientis Student**.   
+  Future unKnown   
 
 Get bored of doing PCBs. Decided to try something new.
 Let's see how far will I go.
